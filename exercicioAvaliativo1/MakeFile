@@ -1,0 +1,19 @@
+CXX = g++
+CXXFLAGS = -Wall -std=c++11
+
+all: programa
+
+programa: main.o treinador.o atleta.o
+	$(CXX) $(CXXFLAGS) -o programa main.o treinador.o atleta.o
+
+main.o: main.cpp treinador.h atleta.h
+	$(CXX) $(CXXFLAGS) -c main.cpp
+
+treinador.o: treinador.cpp treinador.h atleta.h
+	$(CXX) $(CXXFLAGS) -c treinador.cpp
+
+atleta.o: atleta.cpp atleta.h
+	$(CXX) $(CXXFLAGS) -c atleta.cpp
+
+clean:
+	rm -f *.o programa
