@@ -1,0 +1,15 @@
+# Programa  Atletas
+
+Este programa gerencia o desempenho de atletas velocistas opções:
+
+1. Exibir a média móvel dos últimos N treinos.
+2. Prever o tempo do próximo treino usando regressão linear.
+3. Ordenar os atletas pelo melhor tempo.
+4. Para verificar se houve melhoria nos tempos.
+5. Sair do programa.
+
+## Compilação
+
+Para compilar o programa, utilize o seguinte comando no terminal:
+
+make
